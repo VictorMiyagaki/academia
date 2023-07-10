@@ -178,21 +178,10 @@ h2:hover {
     background-color: rgb(108, 207, 157);
 }
 
-.treinoHoje {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-}
-
 .treinoA {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-    align-items: center;
+    grid-template-columns: auto auto auto;
 }
 
 .simbolo {
