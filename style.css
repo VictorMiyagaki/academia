@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(194, 167, 167);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+h1:hover,
+h2:hover {
+    color: white;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.header {
+    border-radius: 25px;
+    border: 10px solid rgb(194, 167, 167);
+    height: 10%;
+    background-color: rgb(70, 64, 64);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+
+.indice {
+    display: flex;
+    justify-content: space-between;
+    width: 25px;
+}
+
+.mes {
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.setaEsquerda:hover {
+    border-right: 12px solid white;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.setaDireita:hover {
+    border-left: 12px solid white;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.data:hover {
+    background-color: rgb(201, 68, 68);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.setaEsquerda {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #000000;
+}
+
+.setaDireita {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #000000;
+}
+
+.calendario {
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.semana {
+    background-color: rgb(141, 28, 28);
+    border-radius: 10px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data {
+    background-color: rgb(182, 54, 54);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.dataPassada {
+    background-color: rgb(141, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.parteUm {
+    padding: 10px;
+    border: 10px solid rgb(194, 167, 167);
+    border-radius: 25px;
+    width: 33%;
+    height: 90%;
+    background-color: rgb(105, 105, 222);
+}
+
+.parteDois {
+    padding: 10px;
+    border-radius: 25px;
+    border: 10px solid rgb(194, 167, 167);
+    background-color: rgb(113, 15, 15);
+    padding: 10px;
+    width: 34%;
+    height: 90%;
+}
+
+.parteTres {
+    padding: 10px;
+    border-radius: 25px;
+    border: 10px solid rgb(194, 167, 167);
+    width: 33%;
+    height: 90%;
+    background-color: rgb(186, 218, 45);
+}
+
+.hoje {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.treinado {
+    background-color: rgb(14, 163, 88);
+}
+
+.treinarei {
+    background-color: rgb(186, 186, 36);
+}
+
+.treinarei:hover {
+    background-color: rgb(230, 230, 133);
+}
+
+.treinado:hover {
+    background-color: rgb(108, 207, 157);
+}
+
+.treinoHoje {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.treinoA {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.simbolo {
+    background-color: rgb(198, 61, 61);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    color: white;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+    border: 1px solid black;
+}
+
+.simbolo2 {
+    background-color: rgb(61, 198, 77);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    color: white;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    border: 1px solid black;
+}
+
+.pesoExercicio {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+input {
+    width: 35px;
+    text-align: center;
+}
+
+.treinoCategoria {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.treinoCategoriaA {
+    text-align: center;
+    grid-column: span 3;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        display: flex;
+        height: 10%;
+        justify-content: space-between;
+    }
+
+    .indice {
+        height: 50%;
+        width: 25px;
+        align-items: center;
+    }
+
+    .calendario {
+        height: 80%;
+    }
+
+    .parteUm {
+        width: 100%;
+        height: 90%;
+        background-color: rgb(105, 105, 222);
+    }
+
+    .parteDois {
+        width: 100%;
+        height: 90%;
+    }
+
+    .parteTres {
+        width: 100%;
+        height: 90%;
+        background-color: rgb(186, 218, 45);
+    }
+
+    .mes {
+        font-size: 1.5rem;
+    }
+
+    .parteTres,
+    .parteDois,
+    .parteUm {
+        height: 85%;
+    }
+
+}
