@@ -226,14 +226,14 @@ h2:hover {
 }
 
 input {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     text-align: center;
 }
 
 .treinoCategoria {
     text-align: center;
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .treinoCategoriaA {
